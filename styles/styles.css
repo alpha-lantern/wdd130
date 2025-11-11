@@ -1,9 +1,14 @@
 :root {
     --border-main: 1px solid #000;
     --main-color: rgb(54, 54, 54); /* For the main title, navigation bar and visual divisions */
+    --color1: #fff;
     --background-color: #eee;
-    --predefined-shadow: 0 0 30px #777;
-    --padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation bar */
@@ -25,34 +30,42 @@ main {
 
 h1 {
     color: var(--main-color);
+    padding: 1rem;
+}
+
+h2 {
+    position: absolute;
+    top: 60px;
+    left: 42%;
+    color: var(--color1);
 }
 
 p {
-    padding: 0;
+    padding: 0 1rem;
 }
 
-main img {
+/* My Profile Picture */
+main img {  
     width: 150px;
     height: auto;
+    float: right;
+    margin: 0 1rem;
     border: var(--border-main);
     padding: 2px;
-    box-shadow: var(--predefined-shadow);
+    box-shadow: 0 0 30px #777;
 }
 
 /* Information about my country */
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: var(--background-color);
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -60,4 +73,18 @@ footer {
     margin-top: 10px;
     border-top: var(--border-main);
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--main-color);
+}
+
+.indent {
+    padding-left: 2rem;
 }
