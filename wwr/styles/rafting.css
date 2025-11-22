@@ -6,13 +6,13 @@
     --body-font: "Garamond", "Times New Roman", serif;
 }
 
-/* Global initial modifications */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Initial modifications */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
@@ -154,7 +154,6 @@ figcaption {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: top;
     border-top: 1px solid var(--primary-color);
     margin-bottom: 1rem;
 }
