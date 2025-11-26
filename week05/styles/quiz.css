@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: rgb(226, 245, 239);
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+
+input, textarea, select, button {
+    width: 450px;
+    margin-bottom: 1.5rem
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+button {
+    background-color: rgb(35, 78, 76);
+    color: antiquewhite;
+    border: 2px solid rgb(203, 216, 215);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: large;
+    margin-bottom: 0;
+}
