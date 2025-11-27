@@ -22,7 +22,7 @@ h1 {
 }
 
 input, textarea, select, button {
-    width: 450px;
+    width: 100%;
     margin-bottom: 1.5rem
 }
 
