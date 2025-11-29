@@ -1,0 +1,98 @@
+:root {
+    --color-accent: darkblue;
+    --background-color: rgb(236, 236, 236);
+    --borders: 1px solid lightgray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1, legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-accent);
+}
+
+h1 {   
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+legend {
+    color: var(--color-accent);
+    font-size: large;
+    padding: 5px;
+}
+
+form {
+    background-color: var(--background-color);
+    border: var(--borders);
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container, button {
+    display: block;
+    margin: 1rem 0 1rem 0;
+}
+
+.container {
+    border: var(--borders);
+    padding: 1rem;
+    text-align: end;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    margin: 5px;
+    padding: 0.4rem 0;
+}
+
+.question {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+}
+
+.question label {
+    margin: 1rem 0;
+}
+
+/* #pet {
+    float: left;
+} */
+
+select {
+    padding: 0.5rem;
+    max-width: 100%;
+    margin: 0 0 0 10px;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    margin-bottom: 0;
+    margin: 0 auto 0.5rem;
+    padding: 0.6rem;
+    background-color: var(--color-accent);
+    color: white;
+    border: solid;
+    border-radius: 10px;
+}
