@@ -2,6 +2,7 @@
     --primary-color: #D7D7D9;
     --secondary-color: #024959;
     --accent-color: #026873;
+    --alpha-background: rgba(215, 216, 217, 0.5);
     --heading-font: "Verdana", "Arial", sans-serif;
     --body-font: "Garamond", "Times New Roman", serif;
 }
@@ -52,15 +53,15 @@ header img {
     text-align: end;
 }
 
-.navigation a {
+.navigation a, .catalog a {
     text-decoration: none;
     font-family: var(--heading-font);
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .navigation a:hover {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     /* text-decoration: underline; */
 }
 
@@ -86,7 +87,7 @@ h2 {
     text-align: center;
     padding: 0.5rem;
     grid-column: 1 / -1;
-    background-color: rgba(215, 216, 217, 0.5);
+    background-color: var(--alpha-background);
 }
 
 figure {
@@ -317,14 +318,6 @@ input, textarea, button, .subscribe label, #purpose label {
 }
 
 /* TRIPS SPECIFIC */
-/* .trips h1 {
-    /* opacity: 100%; */
-
-.hero h2 {
-    position: absolute;
-    bottom: 10px;
-    padding: 1rem;
-}
 
 .trips .large {
     display: grid;
@@ -345,7 +338,23 @@ input, textarea, button, .subscribe label, #purpose label {
     margin: 1rem auto;
 }
 
-.catalog table td {
-    max-width: 300px;
+th, td {
+    padding: 0.5rem;
+}
+
+.catalog th {
+    background-color: var(--alpha-background);
+}
+
+.catalog td {
+    max-width: 200px;
     padding: 0.5rem 1rem;
+}
+
+.catalog a {
+    font-family: var(--body-font);
+}
+
+.catalog a:hover {
+    text-decoration: underline;
 }
